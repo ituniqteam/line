@@ -1,6 +1,6 @@
 let menuBtn = document.querySelector('.menu-btn');
 let menu = document.querySelector('.menu');
-let headerLink = document.querySelectorAll('.header-link')
+let headerLink = document.querySelectorAll('.header__row__items__item')
 
 menuBtn.addEventListener('click', () => {
 	menuBtn.classList.toggle('active');
