@@ -28,9 +28,9 @@
                                 <li>Home</li>
                             </a><a href="#about-us-anchor" class="header__row__items__item">
                                 <li>About Us</li>
-                            </a><a href="" class="header__row__items__item">
+                            </a><a href="#services-anchor" class="header__row__items__item">
                                 <li>Services</li>
-                            </a><a href="" class="header__row__items__item">
+                            </a><a href="#contact-us-anchor" class="header__row__items__item">
                                 <li>Contact Us</li>
                             </a>
                         </ul>
@@ -55,7 +55,7 @@
                 </div>
             </div>
         </section>
-        <section class="services">
+        <section class="services" id="services-anchor">
             <img class="services-circle" src="images/decorations/services-circle.png" alt="">
             <div class="container">
                 <h2>What We Do
@@ -96,7 +96,7 @@
                 </div>
             </div>
         </section>
-        <section class="about-us" id="about-us-anchor anchor">
+        <section class="about-us" id="about-us-anchor">
             <div class="container">
                 <div class="about-us-wrapper">
                     <div class="about-us-left">
@@ -127,38 +127,13 @@
                 <div class="feedback-wrapper">
                     <div class="swiper-container comments-slider">
                         <div class="slider-pagination"></div>
-                        <div class="swiper-wrapper comments-wrapper">
-                            <div class="swiper-slide feedback-box">
-                                <div class="feedback-text">
-                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
-                                    <h5 class="feedback-author">Alibek</h5>
-                                </div>
-                            </div>
-                            <div class="swiper-slide feedback-box">
-                                <div class="feedback-text">
-                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
-                                    <h5 class="feedback-author">Alibek</h5>
-                                </div>
-                            </div>
-                            <div class="swiper-slide feedback-box">
-                                <div class="feedback-text">
-                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
-                                    <h5 class="feedback-author">Alibek</h5>
-                                </div>
-                            </div>
-                            <div class="swiper-slide feedback-box">
-                                <div class="feedback-text">
-                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio quas officiis est officia saepe commodi unde vitae explicabo quibusdam provident molestias maxime tempora quia ex, minus nihil similique nam. Ratione commodi omnis quia deserunt animi non minima repellat aut cum fugiat eius neque totam laboriosam qui quos, dolores praesentium deleniti!</p>
-                                    <h5 class="feedback-author">Alibek</h5>
-                                </div>
-                            </div>
-                        </div>
+                        <div class="swiper-wrapper comments-wrapper"></div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="contact-us-anchor">
         <div class="container">
             <div class="footer-wrapper">
                 <h2>Line Agency</h2>
@@ -175,6 +150,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/swiper.js"></script>
     <script type="module" src="js/create-workers.js"></script>
+    <script type="module" src="js/create-feedback.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="js/request.js"></script>
 </body>

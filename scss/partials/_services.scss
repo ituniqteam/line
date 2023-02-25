@@ -13,6 +13,10 @@
         background: #88C0F9;
     }
 
+    @include xsm{
+        padding: 60px 0 60px;
+    }
+
     .services-circle{
         position: absolute;
         z-index: -1;
@@ -28,12 +32,17 @@
         line-height: 106%;
         margin-bottom: 95px;
 
+        @include xsm{
+            font-size: 37px;
+            width: 250px;
+            margin: 0 auto 40px;
+        }
+
         .services-line{
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-
         }
 
         span{
@@ -67,6 +76,10 @@
                 font-weight: 300;
                 font-size: 15px;
                 line-height: 145.3%;
+
+                @include xsm{
+                    font-size: 12px;
+                }
             }
         }
 

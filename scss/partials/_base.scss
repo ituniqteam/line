@@ -12,6 +12,10 @@ html{
     color: $base;
     background: #fff;
     overflow-x: hidden;
+
+    @include xsm{
+      font-size: 14px;
+    }
   }
   
   .container {

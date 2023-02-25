@@ -12,6 +12,10 @@
         background: #88C0F9;
     }
 
+    @include xsm{
+        padding: 50px 0 30px;
+    }
+
     h3{
         background: url("../images/decorations/staff-line.png");
         display: inline;
@@ -21,16 +25,27 @@
         font-size: 48px;
         line-height: 106.3%;
         color: $dark-blue;
+
+        @include xsm{
+            font-size: 40px;
+        }
     }
 
     .staff-wrapper{
         width: 84%;
-        margin-left: auto;
+        margin: 93px 0 0 auto;
+
+        @include lg{
+            width: 100%;
+        }
+
+        @include md{
+            margin: 40px 0 0;
+        }
 
         .our-team-slider{
             position: relative;
             overflow: hidden;
-            margin-top: 93px;
     
             .our-team-wrapper{
                 display: flex;
@@ -48,12 +63,21 @@
             
                     .our-team-text{
                         padding: 30px;
+
+                        @include sm{
+                            padding: 20px;
+                        }
             
                         p{
                             font-weight: 700;
                             font-size: 24px;
                             line-height: 146.3%;
                             color: $dark-blue;
+
+                            @include sm{
+                                font-size: 16px;
+                                line-height: 130%;
+                            }
                         }
                     }
                 }

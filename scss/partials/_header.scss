@@ -40,6 +40,7 @@
 
                 @include md{
                     color: #fff;
+                    background-position: 100% 100%;
                 }
             }
 
@@ -123,6 +124,10 @@
             }
             .menu.active {
                 transform: translateX(0);
+            }
+
+            .menu-btn.active span{
+                background-color: #fff;
             }
             
             .menu-btn.active span:nth-of-type(1) {

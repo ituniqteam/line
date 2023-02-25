@@ -4,6 +4,10 @@
 .feedback{
     padding: 70px 0 92px;
 
+    @include xsm{
+        padding: 35px 0 45px;
+    }
+
     h3{
         font-weight: 700;
         font-size: 48px;
@@ -12,11 +16,20 @@
         color: $dark-blue;
         margin-bottom: 64px;
 
+        @include xsm{
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+
         span{
             font-weight: 300;
             background: url('../images/decorations/feedback-header-line.png');
             background-repeat: no-repeat;
             background-position: 98% 90%;
+
+            @include xsm{
+                background: none;
+            }
         }
     }
 
@@ -45,6 +58,10 @@
 
                     @include md{
                         width: 50%;
+                    }
+
+                    @include xsm{
+                        padding: 15px;
                     }
                     
                     .feedback-text{
@@ -88,6 +105,11 @@
                 background-color: $base;
                 width: 12px;
                 height: 12px;
+
+                @include xsm{
+                    width: 9px;
+                    height: 9px;
+                }
             }
         }
     }

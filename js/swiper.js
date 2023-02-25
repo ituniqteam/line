@@ -1,10 +1,17 @@
 new Swiper('.our-team-slider', {
-    slidesPerView: 2.5,
-    spaceBetween: 43,
+    slidesPerView: 1.6,
+    spaceBetween: 24,
+
+    breakpoints: {
+        840: {
+            spaceBetween: 43,
+            slidesPerView: 2.5,
+        }
+    }
 });
 
 new Swiper('.comments-slider', {
-    slidesPerView: 2,
+    slidesPerView: 1,
     spaceBetween: 30,
 
     pagination: {
