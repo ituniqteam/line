@@ -1,0 +1,58 @@
+@use "../var/colors" as *;
+@use "../var/mixins" as *;
+
+.footer{
+    background-color: #0F2443;
+    border-radius: 0 158px 0 0;
+    color: #fff;
+    padding: 49px 0 105px;
+
+    .footer-wrapper{
+        width: 439px;
+        h2{
+            margin-bottom: 33px;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 106.3%;
+        }
+
+        p{
+            font-size: 16px;
+            line-height: 159.3%;
+            margin-bottom: 26px;
+        }
+
+        h5{
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 159.3%;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        input{
+            padding: 14px;
+            background-color: transparent;
+            border: 1px solid #fff;
+            color: #fff;
+        }
+
+        input::placeholder{
+            text-transform: uppercase;
+            color: #fff;
+        }
+
+        button{
+            padding: 14px 52px;
+            background-color: $yellow;
+            position: relative;
+            left: -4px;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 159.3%;
+            color: #000;
+            border: 1px solid $yellow;
+        }
+    }
+}

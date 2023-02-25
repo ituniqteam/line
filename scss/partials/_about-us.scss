@@ -1,0 +1,66 @@
+@use "../var/colors" as *;
+@use "../var/mixins" as *;
+
+.about-us{
+    padding: 160px 0 107px;
+
+    .about-us-wrapper{
+        display: flex;
+
+        @include md{
+            display: block;
+        }
+
+        .about-us-left{
+            width: 60%;
+
+            @include md{
+                width: 75%;
+                margin: 0 auto;
+                margin-bottom: 50px;
+            }
+        }
+
+        .about-us-right{
+            margin: auto 0 auto auto;
+            width: 40%;
+
+            @include md{
+                margin: 0 auto;
+                width: 100%;
+            }
+
+            h1{
+                font-weight: 700;
+                font-size: 48px;
+                line-height: 106.3%;
+                color: $dark-blue;
+                margin-bottom: 22px;
+
+
+                span{
+                    font-weight: 300;
+                    background: url('../images/decorations/about-us-line.png');
+                    background-repeat: no-repeat;
+                    background-position: 100% 80%;
+                }
+            }
+
+            p:not(:last-child){
+                margin-bottom: 9px;
+            }
+
+            button{
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 17px;
+                line-height: 137.3%;
+                color: #fff;
+                background: #232C52;
+                border-radius: 10px;
+                padding: 22px 40px;
+                margin-top: 37px;
+            }
+        }
+    }
+}

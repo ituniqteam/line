@@ -1,0 +1,63 @@
+@use "../var/colors" as *;
+@use "../var/mixins" as *;
+
+.staff{
+    padding: 91px 0 73px;
+    background: url('../images/bg-images/staff-bg.png');
+    background-repeat: no-repeat;
+    background-size: 88% 100%;
+    background-position: 100% 0;
+
+    @include xl{
+        background: #88C0F9;
+    }
+
+    h3{
+        background: url("../images/decorations/staff-line.png");
+        display: inline;
+        background-repeat: no-repeat;
+        background-position: 100% 85%;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 106.3%;
+        color: $dark-blue;
+    }
+
+    .staff-wrapper{
+        width: 84%;
+        margin-left: auto;
+
+        .our-team-slider{
+            position: relative;
+            overflow: hidden;
+            margin-top: 93px;
+    
+            .our-team-wrapper{
+                display: flex;
+                justify-content: space-between;
+
+                .our-team-box{
+                    background: #FFFFFF;
+                    box-shadow: 0px 0px 9px 2px rgba(0, 0, 0, 0.05);
+                    border-radius: 10px;
+                    width: 20%;
+                    
+                    img{
+                        border-radius: 10px 10px 0 0;
+                    }
+            
+                    .our-team-text{
+                        padding: 30px;
+            
+                        p{
+                            font-weight: 700;
+                            font-size: 24px;
+                            line-height: 146.3%;
+                            color: $dark-blue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

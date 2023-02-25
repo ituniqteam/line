@@ -1,0 +1,81 @@
+@use "../var/colors" as *;
+@use "../var/mixins" as *;
+
+.services{
+    background: url("../images/bg-images/services-bg.png");
+    background-repeat: no-repeat;
+    background-size: 92% 100%;
+    padding: 92px 0 97px;
+    color: $dark-blue;
+    position: relative;
+
+    @include xl{
+        background: #88C0F9;
+    }
+
+    .services-circle{
+        position: absolute;
+        z-index: -1;
+        bottom: -50px;
+        right: -20px;
+    }
+
+    h2{
+        font-weight: 700;
+        font-size: 48px;
+        text-align: center;
+        position: relative;
+        line-height: 106%;
+        margin-bottom: 95px;
+
+        .services-line{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+
+        span{
+            font-weight: 300;
+        }
+    }
+
+    .services-cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+
+        .services-card{
+            background: #FFFFFF;
+            box-shadow: 0px 0px 9px 2px rgba(0, 0, 0, 0.05);
+            border-radius: 10px;
+            width: 308px;
+            padding: 18px;
+
+            h4{
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 137.3%;
+                color: $dark-blue;
+                margin: 13px 0 6px;
+            }
+            
+            p{
+                font-weight: 300;
+                font-size: 15px;
+                line-height: 145.3%;
+            }
+        }
+
+        .services-card:not(:last-child){
+            margin-right: 40px;
+
+            @include md{
+                margin-right: 0;
+            }
+        }
+    }
+}
