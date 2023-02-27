@@ -213,6 +213,7 @@ legend {
 @media screen and (max-width: 840px) {
   .header__row .menu-btn {
     display: block;
+    z-index: 1000000001;
   }
   .header__row .menu {
     position: fixed;

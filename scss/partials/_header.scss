@@ -103,6 +103,7 @@
         @include md{
             .menu-btn{
                 display: block;
+                z-index: 1000000001;
             }
 
             .menu {
